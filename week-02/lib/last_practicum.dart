@@ -17,6 +17,8 @@ void lastPracticum() {
     if (isPrime(i)) {
       print('Number: $i is a prime number');
       print('Farrel Augusta Dinata - 2341720081\n');
+    } else {
+      print('Number: $i is not a prime number\n');
     }
   }
 }
