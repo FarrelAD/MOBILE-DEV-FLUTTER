@@ -91,8 +91,8 @@ File tugas praktikum terletak di [`lib/last_practicum.dart`](lib/last_practicum.
 
 **Membuat program Dart untuk mengecek bilangan prima**
 
-![Kode tugas praktikum](img/15.png)
+![Kode tugas praktikum](img/16.png)
 
-![Output tugas praktikum](img/16.png)
+![Output tugas praktikum](img/17.png)
 
 Bagian utama yang melakukan pengecekan bilangan prima adalah pada fungsi `isPrime()`. Cara kerja fungsi tersebut adalah membutuhkan parameter `num` bertipe `integer`. Jika nilai `num` kurang dari atau sama dengan 1, maka hasilnya adalah `false`. Kemudian dilakukan looping untuk mengecek apakah bilangan-bilangan di bawahnya bisa digunakan untuk membagi bilangan `num`. Proses perulangan dilakukan dari `0` hingga nilai akar kuadrat dari `num`.
