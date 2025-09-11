@@ -1,3 +1,9 @@
+**Nama**: Farrel Augusta Dinata
+
+**Kelas**: TI-3H
+
+**NIM**: 2341720081
+
 # Tugas Praktikum
 
 ## Soal 1

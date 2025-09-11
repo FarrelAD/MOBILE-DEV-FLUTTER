@@ -1,3 +1,9 @@
+**Nama**: Farrel Augusta Dinata
+
+**Kelas**: TI-3H
+
+**NIM**: 2341720081
+
 # Tugas Praktikum
 
 Struktur proyek untuk minggu ke-2 ini adalah menggunakan struktur yang otomatis di-*generate* oleh Dart untuk program berbasis CLI (*Command Line Interface*). File utama berada pada folder [`bin/`](bin/) dengan nama file [`week_02.dart`](bin/week_02.dart). Dengan begitu, aplikasi hanya perlu dijalankan dengan menggunakan perintah `dart run`. Perintah tersebut akan secara otomatis mengeksekusi file [`week_02.dart`](bin/week_02.dart). 
