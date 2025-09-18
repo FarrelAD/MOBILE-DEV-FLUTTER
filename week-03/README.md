@@ -6,11 +6,11 @@
 
 # Tugas Praktikum
 
-Struktur proyek untuk minggu ke-2 ini adalah menggunakan struktur yang otomatis di-*generate* oleh Dart untuk program berbasis CLI (*Command Line Interface*). File utama berada pada folder [`bin/`](bin/) dengan nama file [`week_02.dart`](bin/week_02.dart). Dengan begitu, aplikasi hanya perlu dijalankan dengan menggunakan perintah `dart run`. Perintah tersebut akan secara otomatis mengeksekusi file [`week_02.dart`](bin/week_02.dart). 
+Struktur proyek untuk minggu ke-3 ini adalah menggunakan struktur yang otomatis di-*generate* oleh Dart untuk program berbasis CLI (*Command Line Interface*). File utama berada pada folder [`bin/`](bin/) dengan nama file [`week_03.dart`](bin/week_03.dart). Dengan begitu, aplikasi hanya perlu dijalankan dengan menggunakan perintah `dart run`. Perintah tersebut akan secara otomatis mengeksekusi file [`week_03.dart`](bin/week_03.dart). 
 
-Untuk beberapa rincian praktikum selanjutnya, file akan dibuat pada folder [`lib/`](lib/). Setiap praktikum akan memiliki file-nya sendiri. File tiap praktikum bisa dipanggil dengan mudah pada main file (`week_02.dart`) melalui proses import berikut:
+Untuk beberapa rincian praktikum selanjutnya, file akan dibuat pada folder [`lib/`](lib/). Setiap praktikum akan memiliki file-nya sendiri. File tiap praktikum bisa dipanggil dengan mudah pada main file (`week_03.dart`) melalui proses import berikut:
 ```dart
-import 'package:week_02/practicum_1.dart';
+import 'package:week_03/practicum_1.dart';
 ```
 
 ## Praktikum 1

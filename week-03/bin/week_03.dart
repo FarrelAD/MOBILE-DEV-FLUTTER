@@ -1,8 +1,8 @@
 import 'dart:io';
-import 'package:week_02/practicum_1.dart';
-import 'package:week_02/practicum_2.dart';
-import 'package:week_02/practicum_3.dart';
-import 'package:week_02/last_practicum.dart';
+import 'package:week_03/practicum_1.dart';
+import 'package:week_03/practicum_2.dart';
+import 'package:week_03/practicum_3.dart';
+import 'package:week_03/last_practicum.dart';
 
 void main(List<String> arguments) {
   print('Available practicum:');
