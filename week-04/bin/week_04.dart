@@ -1,5 +1,11 @@
-import 'package:week_04/week_04.dart' as week_04;
+void main() {
+  var list = [1, 2, 3];
+  assert(list.length == 3);
+  assert(list[1] == 2);
+  print(list.length);
+  print(list[1]);
 
-void main(List<String> arguments) {
-  print('Hello world: ${week_04.calculate()}!');
+  list[1] = 1;
+  assert(list[1] == 1);
+  print(list[1]);
 }
