@@ -3,6 +3,7 @@ import 'package:week_04/practicum_1.dart';
 import 'package:week_04/practicum_2.dart';
 import 'package:week_04/practicum_3.dart';
 import 'package:week_04/practicum_4.dart';
+import 'package:week_04/practicum_5.dart';
 
 void main() {
   print('Available practicum:');
@@ -25,6 +26,7 @@ void main() {
     case 2: practicum2(); break;
     case 3: practicum3(); break;
     case 4: practicum4(); break;
+    case 5: practicum5(); break;
     default: print('Practicum is not available!');
   }
 }
