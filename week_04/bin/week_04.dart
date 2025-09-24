@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:week_04/practicum_1.dart';
+import 'package:week_04/practicum_2.dart';
 
 void main() {
   print('Available practicum:');
@@ -19,6 +20,7 @@ void main() {
 
   switch (inputInt) {
     case 1: practicum1(); break;
+    case 2: practicum2(); break;
     default: print('Practicum is not available!');
   }
 }
