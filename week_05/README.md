@@ -1,16 +1,113 @@
-# hello_jti_polinema
+**Nama**: Farrel Augusta Dinata
 
-A new Flutter project.
+**Kelas**: TI-3H
 
-## Getting Started
+**NIM**: 2341720081
 
-This project is a starting point for a Flutter application.
+# Tugas Praktikum
 
-A few resources to get you started if this is your first Flutter project:
+## Praktikum 1 - Membuat Proyek Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Langkah 1 - Membuat Proyek Flutter**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1 - 1](docs/img/practicum-01/01.png)
+
+
+**Langkah 2 - Hasil Proyek Flutter**
+
+![1 - 2](docs/img/practicum-01/02.png)
+
+## Praktikum 2 - Menghubungkan aplikasi Flutter dengan Perangkat HP
+
+**Langkah 1 - Menghubungkan dengan Perangkat Android melalui USB**
+
+- Mengaktifkan mode developer
+
+    ![2 - 1](docs/img/practicum-02/01.jpg)
+
+- Masuk ke menu developer options
+
+    ![2 - 2](docs/img/practicum-02/02.jpg)
+
+- Menyalakan USB debugging
+
+    ![2 - 3](docs/img/practicum-02/03.jpg)
+
+- Menjalankan aplikasi Flutter di perangkat Android yang terhubung
+
+    ![2 - 4](docs/img/practicum-02/04.png)
+
+
+**Langkah 2 - Menghubungkan dengan Perangkat Android melalui Wi-Fi**
+
+- Mengaktifkan wireless debugging
+
+    ![2 - 5](docs/img/practicum-02/05.jpg)
+
+- Mengecek IP address dan kode pairing di HP
+
+    ![2 - 6](docs/img/practicum-02/06.jpg)
+
+- Menghubungkan HP secara wireless melalui perintah ADB di komputer
+
+    ![2 - 7](docs/img/practicum-02/07.png)
+
+- Menjalankan aplikasi Flutter
+
+    ![2 - 8](docs/img/practicum-02/08.png)
+
+    ![2 - 9](docs/img/practicum-02/04.png)
+
+## Praktikum 3 - Membuat Repositori GitHub
+
+**Langkah 1**
+
+![3 - 1](docs/img/practicum-03/01.png)
+
+
+## Praktikum 4 - Membuat Widget Dasar
+
+**Langkah 1 - Text Widget**
+
+![4 - 1](docs/img/practicum-04/01.png)
+
+**Langkah 2 - Image Widget**
+
+![4 - 2](docs/img/practicum-04/02.png)
+
+
+**Langkah 2 - Menggunakan Widget di Layar Aplikasi**
+
+![4 - 3](docs/img/practicum-04/03.png)
+
+![4 - 4](docs/img/practicum-04/04.png)
+
+
+## Praktikum 5 - Menerapkan Widget Material Design dan Cupertino Design
+
+**Langkah 1 - Cupertion Button dan Loading Bar**
+
+![5 - 1](docs/img/practicum-05/01.png)
+
+**Langkah 2 - Floating Action Button (FAB)**
+
+![5 - 2](docs/img/practicum-05/02.png)
+
+**Langkah 3 - Scaffold Widget**
+
+![5 - 3](docs/img/practicum-05/03.png)
+
+**Langkah 4 - Dialog Widget**
+
+![5 - 4](docs/img/practicum-05/04.png)
+
+![5 - 5](docs/img/practicum-05/05.png)
+
+**Langkah 5 - Input dan Selection Widget**
+
+![5 - 6](docs/img/practicum-05/06.png)
+
+**Langkah 6 - Date and Time Pickers**
+
+![5 - 7](docs/img/practicum-05/07.png)
+
