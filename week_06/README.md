@@ -56,4 +56,30 @@
 
 ## Praktikum 1
 
-*SOON!*
+**Langkah 1**
+
+![2 - 1 - 1](week_6_farrel_2/docs/img/01.png)
+
+**Langkah 2**
+
+![2 - 1 - 2](week_6_farrel_2/docs/img/02.png)
+
+**Langkah 3**
+
+![2 - 1 - 3](week_6_farrel_2/docs/img/03.png)
+
+**Langkah 4**
+
+![2 - 1 - 4](week_6_farrel_2/docs/img/04.png)
+
+**Langkah 5**
+
+![2 - 1 - 5](week_6_farrel_2/docs/img/05.png)
+
+**Langkah 6**
+
+![2 - 1 - 6](week_6_farrel_2/docs/img/06.png)
+
+**Langkah 7**
+
+![2 - 1 - 7](week_6_farrel_2/docs/img/07.png)
