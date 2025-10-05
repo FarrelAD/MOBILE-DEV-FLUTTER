@@ -12,45 +12,45 @@
 
 **Langkah 1**
 
-![1 - 1](docs/img/practicum-01/01.png)
+![1 - 1](week_6_farrel_1/docs/img/practicum-01/01.png)
 
 **Langkah 2**
 
-![1 - 2](docs/img/practicum-01/02.png)
+![1 - 2](week_6_farrel_1/docs/img/practicum-01/02.png)
 
-![1 - 3](docs/img/practicum-01/03.png)
+![1 - 3](week_6_farrel_1/docs/img/practicum-01/03.png)
 
 **Langkah 3**
 
-![1 - 4](docs/img/practicum-01/04.png)
+![1 - 4](week_6_farrel_1/docs/img/practicum-01/04.png)
 
-![1 - 5](docs/img/practicum-01/05.png)
+![1 - 5](week_6_farrel_1/docs/img/practicum-01/05.png)
 
 **Langkah 4**
 
-![1 - 6](docs/img/practicum-01/06.png)
+![1 - 6](week_6_farrel_1/docs/img/practicum-01/06.png)
 
 ## Praktikum 2 - Implementasi Button Row
 
 **Langkah 1-2**
 
-![2 - 1](docs/img/practicum-02/01.png)
+![2 - 1](week_6_farrel_1/docs/img/practicum-02/01.png)
 
 **Langkah 3**
 
-![2 - 2](docs/img/practicum-02/02.png)
+![2 - 2](week_6_farrel_1/docs/img/practicum-02/02.png)
 
 ## Praktikum 3 - Implementasi Text Section
 
 **Langkah 1-3**
 
-![3 - 1](docs/img/practicum-03/01.png)
+![3 - 1](week_6_farrel_1/docs/img/practicum-03/01.png)
 
 ## Praktikum 4 - Implementasi Image Section
 
 **Langkah 1-3**
 
-![4 - 1](docs/img/practicum-04/01.png)
+![4 - 1](week_6_farrel_1/docs/img/practicum-04/01.png)
 
 # Tugas Praktikum 2 - Navigasi dan Rute
 

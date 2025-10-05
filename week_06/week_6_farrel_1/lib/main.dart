@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:week_6/screens/home_screen.dart';
+import 'package:week_6_farrel_1/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
