@@ -1,16 +1,59 @@
-# week_6_farrel_1
+**Nama**: Farrel Augusta Dinata
 
-A new Flutter project.
+**Kelas**: TI-3H
 
-## Getting Started
+**NIM**: 2341720081
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+# Tugas Praktikum 1 - Konsep Layout di Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Praktikum 1 - Membangun Layout Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Langkah 1**
+
+![1 - 1](docs/img/practicum-01/01.png)
+
+**Langkah 2**
+
+![1 - 2](docs/img/practicum-01/02.png)
+
+![1 - 3](docs/img/practicum-01/03.png)
+
+**Langkah 3**
+
+![1 - 4](docs/img/practicum-01/04.png)
+
+![1 - 5](docs/img/practicum-01/05.png)
+
+**Langkah 4**
+
+![1 - 6](docs/img/practicum-01/06.png)
+
+## Praktikum 2 - Implementasi Button Row
+
+**Langkah 1-2**
+
+![2 - 1](docs/img/practicum-02/01.png)
+
+**Langkah 3**
+
+![2 - 2](docs/img/practicum-02/02.png)
+
+## Praktikum 3 - Implementasi Text Section
+
+**Langkah 1-3**
+
+![3 - 1](docs/img/practicum-03/01.png)
+
+## Praktikum 4 - Implementasi Image Section
+
+**Langkah 1-3**
+
+![4 - 1](docs/img/practicum-04/01.png)
+
+# Tugas Praktikum 2 - Navigasi dan Rute
+
+## Praktikum 1
+
+*SOON!*
