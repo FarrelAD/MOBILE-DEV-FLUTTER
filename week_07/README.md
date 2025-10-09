@@ -1,16 +1,30 @@
-# week_07
+**Nama**: Farrel Augusta Dinata
 
-A new Flutter project.
+**Kelas**: TI-3H
 
-## Getting Started
+**NIM**: 2341720081
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+# Tugas Praktikum 1
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Langkah 1 - Menambahkan Plugin**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1 - 1](docs/img/practicum-01/01.png)
+
+![1 - 2](docs/img/practicum-01/02.png)
+
+**Langkah 2 - Membuat Widget `red_text_widget.dart`**
+
+![1 - 3](docs/img/practicum-01/03.png)
+
+**Langkah 3 - Tambah Widget `AutoSizeText`**
+
+![1 - 4](docs/img/practicum-01/04.png)
+
+**Langkah 4 - Menambahkan Widget di `main.dart`**
+
+![1 - 5](docs/img/practicum-01/05.png)
+
+![1 - 6](docs/img/practicum-01/06.png)
+
