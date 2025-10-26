@@ -1,6 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:week_09/display_picture_screen.dart';
+import 'package:week_09/pages/display_picture_screen.dart';
 
 class TakePicturePage extends StatefulWidget {
   final CameraDescription camera;

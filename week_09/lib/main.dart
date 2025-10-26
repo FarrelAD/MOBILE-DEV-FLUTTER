@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'package:week_09/take_picture_page.dart';
+import 'package:week_09/pages/home_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,9 +15,9 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
-  final CameraDescription camera;
-  
   const MyApp({required this.camera, super.key});
+
+  final CameraDescription camera;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: TakePicturePage(camera: camera),
+      home: HomePage(title: 'Camera App Home', camera: camera),
     );
   }
 }
-
