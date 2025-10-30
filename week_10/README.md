@@ -52,6 +52,37 @@ Jawab: Bagian tersebut berguna untuk mengatur bagaimana sebuah proses scrolling 
 
 # Tugas Praktikum 2 - Mengelola Data Layer dengan **InheritedWidget** dan **InheritedNotifier**
 
+---
+
+## Pertanyaan
+
+1. Jelaskan mana yang dimaksud `InheritedWidget` pada langkah 1 tersebut! 
+
+Jawab: `InheritedWidget` bertujuan untuk memudahkan dalam umpan balik data antara parent dan child widget. Child widget hany perlu mengakses data melalui atribut dari `BuildContext` tanpa perlu repot parent widget mengumpan data ke child widget.
+
+2. Mengapa yang digunakan `InheritedNotifier`?
+
+Jawab: `InheritedNotifier` perlu digunakan karena untuk mengamati objek yang bersifat `Listenable` seperti `ValueNotifier`, `ChangeNotifier`, atau `Animation`
+
+3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+
+Jawab: Pada lengkah 3 yang menambahkan kode berikut:
+
+```dart
+int get completedCount => tasks
+  .where((task) => task.complete)
+  .length;
+
+String get completenessMessage =>
+  '$completedCount out of ${tasks.length} tasks';
+```
+
+Method-method tersebut bertujuan untuk memudahkan pengambilan data detail dari properti `tasks`. Contohnya saja untuk mengetahui jumlah `task` yang selesai, maka hanya tinggal memanggil method `completedCount` saja tanpa membuat logic baru di bagian yang lain. Khusus pada bahasa pemrograman `Dart`, bagian `getter` ini sudah memiliki kata kunci tersendiri, yaitu `get`. Ini berbeda dengan bahasa pemrograman lainnya seperti Java yang perlu menuliskan method `getter` secara manual.
+
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+Jawab:
+
 
 # Tugas Praktikum 3 - State di Multiple Screens
 

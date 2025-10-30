@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:week_10/models/plan.dart';
 import 'package:week_10/models/task.dart';
+import 'package:week_10/providers/plan_provider.dart';
 
 class PlanScreen extends StatefulWidget {
   const PlanScreen({super.key});
@@ -10,7 +11,6 @@ class PlanScreen extends StatefulWidget {
 }
 
 class _PlanScreenState extends State<PlanScreen> {
-  Plan _plan = Plan();
   late ScrollController _scrollController;
 
   @override
@@ -31,25 +31,29 @@ class _PlanScreenState extends State<PlanScreen> {
 
   @override
   Widget build(BuildContext context) {
+    ValueNotifier<Plan> planNotifier = PlanProvider.of(context);
+    Plan currentPlan = planNotifier.value;
+
     return Scaffold(
-      appBar: AppBar(title: Text('Master plan - Farrel AD')),
-      body: ListView.builder(
-        controller: _scrollController,
-        keyboardDismissBehavior:
-            Theme.of(context).platform == TargetPlatform.iOS
-            ? ScrollViewKeyboardDismissBehavior.onDrag
-            : ScrollViewKeyboardDismissBehavior.manual,
-        itemCount: _plan.tasks.length,
-        itemBuilder: (context, index) =>
-            _buildTaskTile(_plan.tasks[index], index),
+      appBar: AppBar(title: const Text('Master plan - Farrel AD')),
+      body: ValueListenableBuilder<Plan>(
+        valueListenable: PlanProvider.of(context),
+        builder: (context, plan, child) {
+          return Column(
+            children: [
+              Expanded(child: _buildList(plan)),
+              SafeArea(child: Text(plan.completenessMessage)),
+            ],
+          );
+        },
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
           setState(() {
-            _plan = Plan(
-              name: _plan.name,
-              tasks: List<Task>.from(_plan.tasks)..add(Task()),
+            currentPlan = Plan(
+              name: currentPlan.name,
+              tasks: List<Task>.from(currentPlan.tasks)..add(Task()),
             );
           });
         },
@@ -57,33 +61,41 @@ class _PlanScreenState extends State<PlanScreen> {
     );
   }
 
-  Widget _buildTaskTile(Task task, int index) {
+  Widget _buildList(Plan plan) {
+    return ListView.builder(
+      controller: _scrollController,
+      itemCount: plan.tasks.length,
+      itemBuilder: (context, index) =>
+          _buildTaskTile(plan.tasks[index], index, context),
+    );
+  }
+
+  Widget _buildTaskTile(Task task, int index, BuildContext context) {
+    ValueNotifier<Plan> planNotifier = PlanProvider.of(context);
     return ListTile(
       leading: Checkbox(
         value: task.complete,
         onChanged: (selected) {
-          setState(() {
-            _plan = Plan(
-              name: _plan.name,
-              tasks: List<Task>.from(_plan.tasks)
-                ..[index] = Task(
-                  description: task.description,
-                  complete: selected ?? false,
-                ),
-            );
-          });
+          Plan currentPlan = planNotifier.value;
+          planNotifier.value = Plan(
+            name: currentPlan.name,
+            tasks: List<Task>.from(currentPlan.tasks)
+              ..[index] = Task(
+                description: task.description,
+                complete: selected ?? false,
+              ),
+          );
         },
       ),
       title: TextFormField(
         initialValue: task.description,
         onChanged: (text) {
-          setState(() {
-            _plan = Plan(
-              name: _plan.name,
-              tasks: List<Task>.from(_plan.tasks)
-                ..[index] = Task(description: text, complete: task.complete),
-            );
-          });
+          Plan currentPlan = planNotifier.value;
+          planNotifier.value = Plan(
+            name: currentPlan.name,
+            tasks: List<Task>.from(currentPlan.tasks)
+              ..[index] = Task(description: text, complete: task.complete),
+          );
         },
       ),
     );
