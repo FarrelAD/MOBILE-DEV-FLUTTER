@@ -38,6 +38,12 @@
 
 ![1 - 8](docs/img/practicum-01/08.png)
 
+**HASIL PRAKTIKUM 1**
+
+![1 - 9](docs/img/practicum-01/09.png)
+
+![1 - 10](docs/img/practicum-01/10.png)
+
 
 # Tugas Praktikum 2 - Membuat Photo Filter dengan Carousel
 
@@ -62,3 +68,37 @@
 **Langkah 5**
 
 ![2 - 5](docs/img/practicum-02/05.png)
+
+**HASIL PRAKTIKUM 2**
+
+![2 - 6](docs/img/practicum-02/06.png)
+
+Penerapan filter:
+
+![2 - 7](docs/img/practicum-02/07.png)
+
+![2 - 8](docs/img/practicum-02/08.png)
+
+---
+
+# Laporan akhir
+
+1. Penggabungan antara praktikum 1 dengan 2 agar bisa menerapkan filter dari gambar yang ditangkap
+
+Jawab: Berikut tampilan terbaru dari penggabungan antara praktikum 1 dan 2
+
+![last - 1](docs/img/last/01.png)
+
+![last - 2](docs/img/last/02.png)
+
+![last - 3](docs/img/last/03.png)
+
+2. Jelaskan maksud void async pada praktikum 1?
+
+Jawab: Penggunaan keyword `async` bertujuan untuk melakukan proses asynchronous pada sebuah function. Proses asynchronous ini merupakan sebuah proses yang dapat menjalakan beberapa tugas sekaligus tanpa menunggu tugas sebelumnya selesai.
+
+3. Jelaskan fungsi dari anotasi @immutable dan @override ?
+
+Jawab: Fungsi dari penggunaan anotasi `@override` bertujuan untuk mengimplementasikan fungsionalitas terbaru dari method yang sama pada class parent. Biasanya diperlukan jika memang perlu untuk kebutuhan modifikasi pada suatu komponen. Contoh yang paling sering ditemui adalah penggunaan `@override` di atas method `build()` di Flutter. 
+
+Sedangkan anotasi `@immutable` berfungsi untuk menandai bahwa objek-objek yang dihasilkan dari class tersebut seharusnya tidak bisa dirubah lagi data-data pada field yang dimiliki.
