@@ -1,4 +1,4 @@
-import 'package:async/async.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<Response> _getData() async {
     const authority = 'www.googleapis.com';
-    const path = '/books/v1/volumes/junbDwAAQBAJ';
+    const path = '/books/v1/volumes/RKegDwAAQBAJ';
     Uri url = Uri.https(authority, path);
     return get(url);
   }
@@ -104,17 +104,19 @@ class _HomeScreenState extends State<HomeScreen> {
             const Spacer(),
             ElevatedButton(
               onPressed: () {
-                // count();
+                setState(() { });
 
-                // getNumber().then((value) {
-                //   setState(() {
-                //     _result = value.toString();
-                //   });
-                // }).catchError((e) {
-                //   _result = 'An error occurred!';
-                // });
+                'hello!'.substring(start);
+                _getData()
+                .then((value) {
+                  _result = value.body.toString().substring(0, 450);
+                  setState(() { });
 
-                returnFG();
+                })
+                .catchError((error) {
+                  _result = 'An error occurred!';
+                  setState(() { });
+                });
               }, 
               child: const Text('GO!')
             ),

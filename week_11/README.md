@@ -16,6 +16,32 @@
 
 ![1 - 4](docs/img/01/04.png)
 
+**Pertanyaan:**
+
+1. Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda!
+
+    Jawab: ![1 - 5](docs/img/01/05.png)
+
+2. Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut!
+
+    Jawab: Menambahkan buku dengan judul **Generative Deep Learning** yang diterbitkan oleh O'reilly dan dituliskan oleh **David Foster**.
+
+    ID bukut: RKegDwAAQBAJ
+
+    ![1 - 6](docs/img/01/06.png)
+
+    ![1 - 7](docs/img/01/07.png)
+
+    Hasil percobaan:
+
+    ![1 - 8](docs/img/01/08.png)
+
+3. Jelaskan maksud kode langkah 5 tersebut terkait `substring` dan `catchError`!
+
+    Jawab: 
+    - Fungsi `substring()` : digunakan untuk mengambil sebagian dari keseluruhan data dalam string yang ada. Parameter dari substring adalah `start` dan `end` (opsional). Nilai dari parameter `start` digunakan untuk mengawali pada karakter mana data di string diambil. Jika pada parameter `end` tidak diberikan, maka akan mengambil data dari posisi `start` hingga akhir. Namun, jika `end` diberikan nilai, maka karakter yang diambil akan dihentikan sampai di titik situ saja.
+    - Fungsi `catchError()` : ini digunakan untuk menangkap error yang terjadi dari proses asynchronous.
+
 # Tugas Praktikum 2 - Menggunakan `async`/`await` untuk menghindari callbacks
 
 ![2 - 1](docs/img/02/01.png)
