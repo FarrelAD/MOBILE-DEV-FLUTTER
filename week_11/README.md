@@ -118,6 +118,12 @@
 
 # Tugas Praktikum 5 - Menangani Respon Error pada Async Code
 
+![5 - 1](docs/img/05/01.png)
+
+![5 - 2](docs/img/05/02.png)
+
+![5 - 3](docs/img/05/03.png)
+
 **Pertanyaan:**
 
 1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
