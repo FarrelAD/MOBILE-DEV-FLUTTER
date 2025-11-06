@@ -73,6 +73,7 @@
 
 **Preview**
 
+![week-11-practicum-3](https://github.com/user-attachments/assets/77e9ad2f-687c-48e9-b7b7-3a29189f4663)
 
 
 **Pertanyaan:**
