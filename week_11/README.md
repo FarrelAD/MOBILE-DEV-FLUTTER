@@ -177,6 +177,25 @@
 
 # Tugas Praktikum 6 - Menggunakan Future dengan StatefulWidget
 
+![6 - 1](docs/img/06/01.png)
+
+![6 - 2](docs/img/06/02.png)
+
+![6 - 3](docs/img/06/03.png)
+
+![6 - 4](docs/img/06/04.png)
+
+
+**Pertanyaan:**
+
+1. Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method `getPosition()` dengan kode `await Future.delayed(const Duration(seconds: 3));`
+
+    Jawab: 
+
+2. Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
+    Jawab: 
+
 # Tugas Praktikum 7 - Manajemen Future dengan StatefulWidget
 
 # Tugas Praktikum 8 - Navigation route dengan Future Function

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
+import 'package:week_11/pages/location_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -154,6 +155,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const Spacer(),
             Text(_result),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (ctx) => const LocationScreen()),
+                );
+              },
+              child: const Text('Go to location screen!'),
+            ),
             const Spacer(),
             const CircularProgressIndicator(),
             const Spacer(),
