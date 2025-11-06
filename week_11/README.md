@@ -50,6 +50,12 @@
 
 ![2 - 3](docs/img/02/03.png)
 
+**Pertanyaan:**
+
+1. Jelaskan maksud kode langkah 1 dan 2 tersebut!
+
+    Jawab: Kode pada langkah 1 dan 2 merupakan contoh penggunaan proses **asynchronous** dengan menggunakan keywords `async` dan juga `await`. Dengan penggunaan keywords tersebut, maka sebuah proses tidak perlu menunggu saat ini selesai untuk mengeksekusi proses selanjutnya. Jika ditemukan proses saat ini membutuhkan sebuah delay dalam waktu tertentu, maka program akan otomatis beralih pada aktivitas selanjutnya selagi proses sebelumnya diproses.
+
 # Tugas Praktikum 3 - Menggunakan `Completer` di `Future`
 
 ![3 - 1](docs/img/03/01.png)

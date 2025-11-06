@@ -104,19 +104,17 @@ class _HomeScreenState extends State<HomeScreen> {
             const Spacer(),
             ElevatedButton(
               onPressed: () {
-                setState(() { });
+                // count();
 
-                'hello!'.substring(start);
-                _getData()
-                .then((value) {
-                  _result = value.body.toString().substring(0, 450);
-                  setState(() { });
+                // getNumber().then((value) {
+                //   setState(() {
+                //     _result = value.toString();
+                //   });
+                // }).catchError((e) {
+                //   _result = 'An error occurred!';
+                // });
 
-                })
-                .catchError((error) {
-                  _result = 'An error occurred!';
-                  setState(() { });
-                });
+                returnFG();
               }, 
               child: const Text('GO!')
             ),
