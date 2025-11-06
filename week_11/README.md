@@ -50,6 +50,11 @@
 
 ![2 - 3](docs/img/02/03.png)
 
+**Preview**
+
+![week-11-practicum-2](https://github.com/user-attachments/assets/16cb2c4d-8700-4904-85b5-e9141b764076)
+
+
 **Pertanyaan:**
 
 1. Jelaskan maksud kode langkah 1 dan 2 tersebut!
