@@ -107,6 +107,7 @@
 
 **Preview**
 
+![week-11-practicum-4](https://github.com/user-attachments/assets/79d45235-90e0-403a-bc9e-8504ede50287)
 
 
 **Pertanyaan:**
