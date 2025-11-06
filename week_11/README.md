@@ -198,6 +198,33 @@
 
 # Tugas Praktikum 7 - Manajemen Future dengan StatefulWidget
 
+![7 - 1](docs/img/07/01.png)
+
+![7 - 2](docs/img/07/02.png)
+
+![7 - 3](docs/img/07/03.png)
+
+![7 - 4](docs/img/07/04.png)
+
+
+**Pertanyaan:**
+
+1. Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
+    Jawab:
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
+
+    Jawab:
+
+3. Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+
+    Jawab:
+
+4. Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
+
+    Jawab:
+
 # Tugas Praktikum 8 - Navigation route dengan Future Function
 
 # Tugas Praktikum 9 - Memanfaatkan `async/await` dengan Widget Dialog
