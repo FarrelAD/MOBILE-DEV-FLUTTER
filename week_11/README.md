@@ -115,3 +115,62 @@
 1. Jelaskan maksud perbedaan kode langkah 1 dan 4!
 
     Jawab: Perbedaan yang paling mencolok adalah gaya penulisan untuk mengatur asynchronous process dengan atau tanpa keyword `async / await`. Penulisan dengan cara `async/await` membuat kode masih menyerupai dengan kode Flutter pada umumnya. Namun, di sisi lain, penggunaan `FutureGroup` jauh lebih fleksibel apabila di suatu saat akan ada modifikasi dari kumpulan proses asynchronous saat ini. Untuk menambahkan asychronous baru, maka tinggal menggunakan fungsi `.add()`. 
+
+# Tugas Praktikum 5 - Menangani Respon Error pada Async Code
+
+**Preview**
+
+
+
+**Pertanyaan:**
+
+1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
+
+    Jawab:
+
+2. Panggil method `handleError()` tersebut di `ElevatedButton`, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+    Jawab: 
+
+    Hasilnya sama saja antara percobaan pertama dan kedua ini. Hasilnya menunjukkan error yang memang sudah disengaja dari function `handleError()` itu sendiri. 
+    
+    ```dart
+    throw Exception('Something terrible happened!');
+    ```
+    Bagian `throw Exception()` tersebut merupakan trigger yang membuat hasil yang ditampilkan berupa hasil error. Error pasti akan ditangkap pada bagian `catchError()` atau `catch` di struktur `try-catch-finally`.
+
+    Perbedaan yang menonjol hanyalah pada pada gaya pembuatan kode. Langkah pertama implementasi dari function `handleError()` disusun dengan secara berantai (chaining).
+
+    ```dart
+    _returnError()
+        .then((value) {
+            setState(() {
+            _result = 'Success!';
+            });
+        }).catchError((onError) {
+            setState(() {
+            _result = onError.toString();
+            });
+        }).whenComplete(() => print('Complete!'));
+    ```
+    Sedangkan untuk metode yang kedua ditulis dengan lebih menyerupai kode Flutter secara konvensional tanpa membuat callback pada tiap proses setelah asynchronous.
+    
+    ```dart
+    try {
+      await _returnError();
+    } catch (e) {
+      setState(() {
+        _result = e.toString();
+      });
+    } finally {
+      print('Complete!');
+    }
+    ```
+
+# Tugas Praktikum 6 - Menggunakan Future dengan StatefulWidget
+
+# Tugas Praktikum 7 - Manajemen Future dengan StatefulWidget
+
+# Tugas Praktikum 8 - Navigation route dengan Future Function
+
+# Tugas Praktikum 9 - Memanfaatkan `async/await` dengan Widget Dialog

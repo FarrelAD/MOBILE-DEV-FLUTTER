@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -94,6 +95,23 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  Future _returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened!');
+  }
+
+  Future _handleError() async {
+    try {
+      await _returnError();
+    } catch (e) {
+      setState(() {
+        _result = e.toString();
+      });
+    } finally {
+      print('Complete!');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,7 +135,20 @@ class _HomeScreenState extends State<HomeScreen> {
                 //   _result = 'An error occurred!';
                 // });
 
-                returnFG();
+                // returnFG();
+
+                // _returnError()
+                // .then((value) {
+                //   setState(() {
+                //     _result = 'Success!';
+                //   });
+                // }).catchError((onError) {
+                //   setState(() {
+                //     _result = onError.toString();
+                //   });
+                // }).whenComplete(() => print('Complete!'));
+
+                _handleError();
               },
               child: const Text('GO!'),
             ),
