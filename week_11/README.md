@@ -118,19 +118,21 @@
 
 # Tugas Praktikum 5 - Menangani Respon Error pada Async Code
 
-**Preview**
-
-
-
 **Pertanyaan:**
 
 1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
 
     Jawab:
 
-2. Panggil method `handleError()` tersebut di `ElevatedButton`, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+   ![week-11-practicum-5a](https://github.com/user-attachments/assets/e4824889-f93a-40d1-8236-e7e898f67c48)
 
-    Jawab: 
+
+3. Panggil method `handleError()` tersebut di `ElevatedButton`, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+    Jawab:
+
+   ![week-11-practicum-5b](https://github.com/user-attachments/assets/84c9ac33-e782-46e0-bfd7-95ca65a6d722)
+
 
     Hasilnya sama saja antara percobaan pertama dan kedua ini. Hasilnya menunjukkan error yang memang sudah disengaja dari function `handleError()` itu sendiri. 
     
