@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -44,6 +45,28 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  late Completer _completer;
+
+  Future getNumber() {
+    _completer = Completer<int>();
+    calculate();
+    return _completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    _completer.complete(42);
+  }
+
+  Future<void> calculate2() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      _completer.complete(42);
+    } catch (e) {
+      _completer.completeError({});
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,8 +76,18 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             const Spacer(),
             ElevatedButton(
-              onPressed: () => count(),
-              child: const Text('GO!'),
+              onPressed: () {
+                // count();
+
+                getNumber().then((value) {
+                  setState(() {
+                    _result = value.toString();
+                  });
+                }).catchError((e) {
+                  _result = 'An error occurred!';
+                });
+              }, 
+              child: const Text('GO!')
             ),
             const Spacer(),
             Text(_result),

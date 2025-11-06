@@ -16,10 +16,20 @@
 
 ![1 - 4](docs/img/01/04.png)
 
-# Tugas Praktikum 1 - Menggunakan `async`/`await` untuk menghindari callbacks
+# Tugas Praktikum 2 - Menggunakan `async`/`await` untuk menghindari callbacks
 
 ![2 - 1](docs/img/02/01.png)
 
 ![2 - 2](docs/img/02/02.png)
 
 ![2 - 3](docs/img/02/03.png)
+
+# Tugas Praktikum 3 - Menggunakan `Completer` di `Future`
+
+![3 - 1](docs/img/03/01.png)
+
+![3 - 2](docs/img/03/02.png)
+
+![3 - 3](docs/img/03/03.png)
+
+![3 - 4](docs/img/03/04.png)
