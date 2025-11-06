@@ -33,3 +33,11 @@
 ![3 - 3](docs/img/03/03.png)
 
 ![3 - 4](docs/img/03/04.png)
+
+# Tugas Praktikum 4 - Memanggil `Future` secara parallel
+
+![4 - 1](docs/img/04/01.png)
+
+![4 - 2](docs/img/04/02.png)
+
+![4 - 3](docs/img/04/03.png)

@@ -1,4 +1,4 @@
-import 'dart:async';
+import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -67,6 +67,33 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  void returnFG() {
+    // option 1: using FutureGroup
+    // FutureGroup<int> futureGroup = FutureGroup<int>();
+    // futureGroup.add(returnOneAsync());
+    // futureGroup.add(returnTwoAsync());
+    // futureGroup.add(returnThreeAsync());
+    // futureGroup.close();
+
+    // option 2: using Future.wait()
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+
+    futures.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element; 
+      }
+
+      setState(() {
+        _result = total.toString();
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,13 +106,15 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 // count();
 
-                getNumber().then((value) {
-                  setState(() {
-                    _result = value.toString();
-                  });
-                }).catchError((e) {
-                  _result = 'An error occurred!';
-                });
+                // getNumber().then((value) {
+                //   setState(() {
+                //     _result = value.toString();
+                //   });
+                // }).catchError((e) {
+                //   _result = 'An error occurred!';
+                // });
+
+                returnFG();
               }, 
               child: const Text('GO!')
             ),
