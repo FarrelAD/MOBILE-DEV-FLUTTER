@@ -240,3 +240,15 @@
     Jawab:
 
 # Tugas Praktikum 9 - Memanfaatkan `async/await` dengan Widget Dialog
+
+![9 - 1](docs/img/09/01.png)
+
+![9 - 2](docs/img/09/02.png)
+
+![9 - 3](docs/img/09/03.png)
+
+**Pertanyaan:**
+
+1. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ? Gantilah 3 warna pada langkah 3 dengan warna favorit Anda! Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
+
+    Jawab:
