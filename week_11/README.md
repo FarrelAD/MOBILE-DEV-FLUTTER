@@ -227,4 +227,16 @@
 
 # Tugas Praktikum 8 - Navigation route dengan Future Function
 
+![8 - 1](docs/img/08/01.png)
+
+![8 - 2](docs/img/08/02.png)
+
+![8 - 3](docs/img/08/03.png)
+
+**Pertanyaan:**
+
+1. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ? Gantilah 3 warna pada langkah 5 dengan warna favorit Anda! Capture hasil praktikum Anda berupa GIF dan lampirkan di README!
+
+    Jawab:
+
 # Tugas Praktikum 9 - Memanfaatkan `async/await` dengan Widget Dialog
