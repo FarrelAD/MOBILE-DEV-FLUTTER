@@ -71,6 +71,31 @@
 
 ![3 - 4](docs/img/03/04.png)
 
+**Preview**
+
+
+
+**Pertanyaan:**
+
+1. Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+
+    Jawab: Kode pada langkah 2 hanya mengatur 1 kondisi di dalam asynchronous, semuanya akan dianggap sukses. Sedangkan, pada langkah 5 dan juga 6 dia juga mengatur pada saat error.
+
+    ```dart
+    // ...
+
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      _completer.complete(42);
+    } catch (e) {
+      _completer.completeError({});
+    }
+
+    //...
+    ```
+    Bagian `try-catch` tersebut yang membuat `completer` bisa digunakan untuk mengatur pada proses baik itu sukses ataupun error.
+
+
 # Tugas Praktikum 4 - Memanggil `Future` secara parallel
 
 ![4 - 1](docs/img/04/01.png)

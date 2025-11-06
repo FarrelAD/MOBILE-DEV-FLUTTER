@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
     futures.then((List<int> value) {
       int total = 0;
       for (var element in value) {
-        total += element; 
+        total += element;
       }
 
       setState(() {
@@ -97,7 +97,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Back from the future')),
+      appBar: AppBar(
+        title: const Text('Back from the future'),
+        backgroundColor: Colors.amberAccent,
+      ),
       body: Center(
         child: Column(
           children: [
@@ -115,8 +118,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 // });
 
                 returnFG();
-              }, 
-              child: const Text('GO!')
+              },
+              child: const Text('GO!'),
             ),
             const Spacer(),
             Text(_result),
