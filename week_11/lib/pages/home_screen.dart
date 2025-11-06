@@ -18,6 +18,32 @@ class _HomeScreenState extends State<HomeScreen> {
     return get(url);
   }
 
+  Future<int> returnOneAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 1;
+  }
+
+  Future<int> returnTwoAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 2;
+  }
+
+  Future<int> returnThreeAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 3;
+  }
+
+  Future count() async {
+    int total = 0;
+    total = await returnOneAsync();
+    total += await returnTwoAsync();
+    total += await returnThreeAsync();
+
+    setState(() {
+      _result = total.toString();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,19 +53,8 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             const Spacer(),
             ElevatedButton(
-              onPressed: () {
-                setState(() { });
-
-                _getData()
-                .then((value) {
-                  _result = value.body.toString().substring(0, 450);
-                  setState(() { });
-                }).catchError((_) {
-                  _result = 'An error occurred';
-                  setState(() { });
-                });
-              }, 
-              child: const Text('GO!')
+              onPressed: () => count(),
+              child: const Text('GO!'),
             ),
             const Spacer(),
             Text(_result),
