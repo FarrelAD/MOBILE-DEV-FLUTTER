@@ -12,12 +12,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.purple),
-      home: PlanProvider(
-        notifier: ValueNotifier<Plan>(Plan()),
-        child: const PlanScreen(),
+    return PlanProvider(
+      notifier: ValueNotifier<List<Plan>>(const []),
+      child: MaterialApp(
+        title: 'State management app',
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: const PlanScreen(),
       ),
     );
   }

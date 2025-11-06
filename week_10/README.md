@@ -86,4 +86,8 @@ Jawab:
 
 # Tugas Praktikum 3 - State di Multiple Screens
 
+![3 - 1](docs/img/03/01.png)
 
+![3 - 2](docs/img/03/02.png)
+
+![3 - 3](docs/img/03/03.png)
