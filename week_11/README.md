@@ -104,3 +104,13 @@
 ![4 - 2](docs/img/04/02.png)
 
 ![4 - 3](docs/img/04/03.png)
+
+**Preview**
+
+
+
+**Pertanyaan:**
+
+1. Jelaskan maksud perbedaan kode langkah 1 dan 4!
+
+    Jawab: Perbedaan yang paling mencolok adalah gaya penulisan untuk mengatur asynchronous process dengan atau tanpa keyword `async / await`. Penulisan dengan cara `async/await` membuat kode masih menyerupai dengan kode Flutter pada umumnya. Namun, di sisi lain, penggunaan `FutureGroup` jauh lebih fleksibel apabila di suatu saat akan ada modifikasi dari kumpulan proses asynchronous saat ini. Untuk menambahkan asychronous baru, maka tinggal menggunakan fungsi `.add()`. 
