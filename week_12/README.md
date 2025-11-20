@@ -84,6 +84,32 @@ Jawab:
 
 # Tugas Praktikum 4 - Subscribe ke Stream Events
 
+![4 - 1](docs/img/04/01.png)
+
+![4 - 2](docs/img/04/02.png)
+
+![4 - 3](docs/img/04/03.png)
+
+![4 - 4](docs/img/04/04.png)
+
+![4 - 5](docs/img/04/05.png)
+
+![4 - 6](docs/img/04/06.png)
+
+![4 - 7](docs/img/04/07.png)
+
+![4 - 8](docs/img/04/08.png)
+
+![4 - 9](docs/img/04/09.gif)
+
+![4 - 10](docs/img/04/10.gif)
+
+Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+Jawab: Langkah-langkah tersebut merupakan contoh implementasi untuk melakukan sebuah stream dengan sebuah subscription. Ketika sebuah stream merupakan subscription juga, maka dia berarti tidak hanya menjadi sebuah stream yang pasif, namun dia bisa lebih mengendalikan apa yang harus dilakukan dari data stream yang telah dilakukan, seperti `pause()`, `resume()`, ataupun `cancel()`
+
+![4 - 11](docs/img/04/11.png)
+
 # Tugas Praktikum 5 - Multiple Events Subscription
 
 # Tugas Praktikum 6 - Stream Builder
