@@ -44,6 +44,32 @@ Sebaliknya, `listen` mendaftarkan sebuah callback yang akan dijalankan setiap ka
 
 # Tugas Praktikum 2 - Stream Controllers and Sinks
 
+![2 - 1](docs/img/02/01.png)
+
+![2 - 2](docs/img/02/02.png)
+
+![2 - 3](docs/img/02/03.png)
+
+![2 - 4](docs/img/02/04.png)
+
+![2 - 5](docs/img/02/05.png)
+
+![2 - 6](docs/img/02/06.gif)
+
+Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+Jawab: Kode tersebut digunakan untuk menyiapkan stream sebelum widget dibuild. Proses ini melibatkan pengacakan angka.
+
+![2 - 7](docs/img/02/07.png)
+
+![2 - 8](docs/img/02/08.png)
+
+![2 - 9](docs/img/02/09.png)
+
+Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+Jawab: Kode tersebut merupakan contoh skenario jika proses error terjadi pada stream yang dilakukan dengan sengaja besserta penangannya dengan memanfaatkan fungsi `onError()` setelah `listen()`
+
 # Tugas Praktikum 3 - Injeksi Data ke Streams
 
 # Tugas Praktikum 4 - Subscribe ke Stream Events
