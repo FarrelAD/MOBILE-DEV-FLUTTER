@@ -112,6 +112,30 @@ Jawab: Langkah-langkah tersebut merupakan contoh implementasi untuk melakukan se
 
 # Tugas Praktikum 5 - Multiple Events Subscription
 
+![5 - 1](docs/img/05/01.png)
+
+![5 - 2](docs/img/05/02.png)
+
+![5 - 3](docs/img/05/03.png)
+
+Jelaskan mengapa error itu bisa terjadi ?
+
+Jawab: Error tersebut terjadi karena stream yang dibuat merupakan stream bertipe single-subscription stream. Itu berarti hanya memungkinkan untuk dilakukan 1 subscribe di waktu yang sama. Jika ingin melakukan multiple subscription, maka bisa diaktifkan mode broadcast dari stream yang ada. Berikut adalah contohnya:
+
+```dart
+final stream = StreamController<int>.broadcast().stream;
+```
+
+![5 - 4](docs/img/05/04.png)
+
+![5 - 5](docs/img/05/05.png)
+
+![5 - 6](docs/img/05/06.gif)
+
+Jelaskan mengapa hal itu bisa terjadi ?
+
+Jawab: Hal itu bisa terjadi karena stream disubscription sudah diaktifkan mode broadcast. Itu membuat 2 subscription sekaligus bisa berjalan dengan normal. Dikarenakan 2 subscription tersebut akan langsung memperbarui variabel yang sama, yaitu `values` dengan tambahan karakter baru berupa angka, maka hasil yang ditampilkan bisa tampak *double-double*.
+
 # Tugas Praktikum 6 - Stream Builder
 
 # Tugas Praktikum 7 - BLoC Pattern
