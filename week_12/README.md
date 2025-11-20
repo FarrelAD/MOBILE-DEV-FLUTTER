@@ -72,6 +72,16 @@ Jawab: Kode tersebut merupakan contoh skenario jika proses error terjadi pada st
 
 # Tugas Praktikum 3 - Injeksi Data ke Streams
 
+![3 - 1](docs/img/03/01.png)
+
+![3 - 2](docs/img/03/02.png)
+
+![3 - 3](docs/img/03/03.gif)
+
+Jelaskan maksud kode langkah 1-3 tersebut!
+
+Jawab:
+
 # Tugas Praktikum 4 - Subscribe ke Stream Events
 
 # Tugas Praktikum 5 - Multiple Events Subscription
