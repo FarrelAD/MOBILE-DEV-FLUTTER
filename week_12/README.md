@@ -138,4 +138,20 @@ Jawab: Hal itu bisa terjadi karena stream disubscription sudah diaktifkan mode b
 
 # Tugas Praktikum 6 - Stream Builder
 
+![6 - 1](docs/img/06/01.png)
+
+![6 - 2](docs/img/06/02.png)
+
+![6 - 3](docs/img/06/03.png)
+
+![6 - 4](docs/img/06/04.png)
+
+![6 - 5](docs/img/06/05.png)
+
+![6 - 6](docs/img/06/06.gif)
+
+Jelaskan maksud kode pada langkah 3 dan 7 !
+
+Jawab: Langkah-langkah yang telah dilakukan pada praktikum ini merupakan contoh demonstrasi dari contoh stream yang dihasilkan dari sebuah generator, sebuah sistem yang mampu menghasilkan atau mengembalikan data secara terus menerus dalam periode tertentu, dalam tiap detik.
+
 # Tugas Praktikum 7 - BLoC Pattern
