@@ -155,3 +155,21 @@ Jelaskan maksud kode pada langkah 3 dan 7 !
 Jawab: Langkah-langkah yang telah dilakukan pada praktikum ini merupakan contoh demonstrasi dari contoh stream yang dihasilkan dari sebuah generator, sebuah sistem yang mampu menghasilkan atau mengembalikan data secara terus menerus dalam periode tertentu, dalam tiap detik.
 
 # Tugas Praktikum 7 - BLoC Pattern
+
+![7 - 1](docs/img/07/01.png)
+
+![7 - 2](docs/img/07/02.png)
+
+![7 - 3](docs/img/07/03.png)
+
+![7 - 4](docs/img/07/04.png)
+
+![7 - 5](docs/img/07/05.png)
+
+![7 - 6](docs/img/07/06.png)
+
+![7 - 7](docs/img/07/07.gif)
+
+Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+
+Jawab: Praktikum kali ini berusaha untuk memisahkan antara pembagian kode yang mengurusi bagian tampilan (UI) dan juga dengan controller yang mengatur data yang ada. Konsep tersebut biasa dinamakan dengan BLoC (Business Logic Component).
