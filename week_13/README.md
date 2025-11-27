@@ -78,3 +78,11 @@
 ![6 - 5](docs/img/06/05.png)
 
 # Tugas Praktikum 7 - Menyimpan data dengan enkripsi/dekripsi
+
+![7 - 1](docs/img/07/01.png)
+
+![7 - 2](docs/img/07/02.png)
+
+![7 - 3](docs/img/07/03.png)
+
+![7 - 4](docs/img/07/04.png)

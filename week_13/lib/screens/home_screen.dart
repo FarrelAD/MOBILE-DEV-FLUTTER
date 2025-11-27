@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:week_13/models/pizza.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path_provider/path_provider.dart';
@@ -22,6 +23,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   late File _file;
   String _fileText = '';
+
+  final _pwdController = TextEditingController();
+  String _myPass = '';
+
+  final _storage = const FlutterSecureStorage();
+  final _myKey = 'myPass';
 
   Future<List<Pizza>> _readJsonFile() async {
     String myString = await DefaultAssetBundle.of(
@@ -104,6 +111,15 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  Future<void> _writeToSecureStorage() async {
+    await _storage.write(key: _myKey, value: _pwdController.text);
+  }
+
+  Future<String> _readFromSecureStorage() async {
+    String secret = await _storage.read(key: _myKey) ?? '';
+    return secret;
+  }
+
   @override
   void initState() {
     super.initState();
@@ -130,12 +146,26 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('Documents path $_documentsPath'),
-            Text('Temp path: $_tempPath'),
+            TextField(controller: _pwdController),
 
             ElevatedButton(
-              onPressed: () => _readFile(),
-              child: const Text('Read file'),
+              onPressed: () {
+                _writeToSecureStorage();
+              },
+              child: const Text('Save value'),
+            ),
+
+            Text('My pass: $_myPass'),
+
+            ElevatedButton(
+              onPressed: () {
+                _readFromSecureStorage().then((value) {
+                  setState(() {
+                    _myPass = value;
+                  });
+                });
+              },
+              child: const Text('Read from secure storage'),
             ),
           ],
         ),
