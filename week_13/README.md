@@ -36,6 +36,14 @@
 
 # Tugas Praktikum 2 - Handle kompatibilitas data JSON
 
+![2 - 1](docs/img/02/01.png)
+
+![2 - 2](docs/img/02/02.png)
+
+![2 - 3](docs/img/02/03.png)
+
+![2 - 4](docs/img/02/04.png)
+
 # Tugas Praktikum 3 - Menangani error JSON
 
 # Tugas Praktikum 4 - SharedPreferences

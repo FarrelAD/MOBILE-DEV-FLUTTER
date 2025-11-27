@@ -13,12 +13,13 @@ class Pizza {
     required this.imageUrl,
   });
 
-  Pizza.fromJson(Map<String, dynamic> json) : 
-    id = json['id'],
-    pizzaName = json['pizzaName'],
-    description = json['description'],
-    price = json['price'],
-    imageUrl = json['imageUrl'];
+  Pizza.fromJson(Map<String, dynamic> json)
+    : id = (json['id'] as num?)?.toInt() ?? 0,
+      pizzaName = json['pizzaName']?.toString() ?? '',
+      description = json['description']?.toString() ?? '',
+      price = (json['price'] as num?)?.toDouble() ?? 0,
+      imageUrl = json['imageUrl']?.toString() ?? '';
+
   
   Map<String, dynamic> toJson() {
     return {
