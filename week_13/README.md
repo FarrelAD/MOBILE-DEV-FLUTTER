@@ -46,6 +46,10 @@
 
 # Tugas Praktikum 3 - Menangani error JSON
 
+![3 - 1](docs/img/03/01.png)
+
+![3 - 2](docs/img/03/02.png)
+
 # Tugas Praktikum 4 - SharedPreferences
 
 # Tugas Praktikum 5 - Akses filesystem dengan path_provider
