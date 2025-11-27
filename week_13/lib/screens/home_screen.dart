@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:week_13/models/pizza.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -18,6 +19,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   String _documentsPath = '';
   String _tempPath = '';
+
+  late File _file;
+  String _fileText = '';
 
   Future<List<Pizza>> _readJsonFile() async {
     String myString = await DefaultAssetBundle.of(
@@ -79,6 +83,27 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  Future<bool> _writeFile() async {
+    try {
+      await _file.writeAsString('Margherita, Capriciossa, Napoli');
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  Future<bool> _readFile() async {
+    try {
+      String fileContent = await _file.readAsString();
+      setState(() {
+        _fileText = fileContent;
+      });
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -91,7 +116,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
     // _readAndWritePreference();
 
-    _getPaths();
+    _getPaths().then((_) {
+      _file = File('$_documentsPath/pizzas.txt');
+      _writeFile();
+    });
   }
 
   @override
@@ -103,7 +131,12 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text('Documents path $_documentsPath'),
-            Text('Temp path: $_tempPath')
+            Text('Temp path: $_tempPath'),
+
+            ElevatedButton(
+              onPressed: () => _readFile(),
+              child: const Text('Read file'),
+            ),
           ],
         ),
       ),

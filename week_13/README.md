@@ -67,4 +67,14 @@
 
 # Tugas Praktikum 6 - Akses filesystem dengan direktori
 
+![6 - 1](docs/img/06/01.png)
+
+![6 - 2](docs/img/06/02.png)
+
+![6 - 3](docs/img/06/03.png)
+
+![6 - 4](docs/img/06/04.png)
+
+![6 - 5](docs/img/06/05.png)
+
 # Tugas Praktikum 7 - Menyimpan data dengan enkripsi/dekripsi
