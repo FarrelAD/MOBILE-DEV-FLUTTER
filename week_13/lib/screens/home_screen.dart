@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:week_13/models/pizza.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path_provider/path_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,6 +15,9 @@ class _HomeScreenState extends State<HomeScreen> {
   String _pizzaString = '';
   List<Pizza> _myPizzas = [];
   int _appCounter = 0;
+
+  String _documentsPath = '';
+  String _tempPath = '';
 
   Future<List<Pizza>> _readJsonFile() async {
     String myString = await DefaultAssetBundle.of(
@@ -65,6 +69,16 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  Future<void> _getPaths() async {
+    final docDir = await getApplicationDocumentsDirectory();
+    final tempDir = await getTemporaryDirectory();
+
+    setState(() {
+      _documentsPath = docDir.path;
+      _tempPath = tempDir.path;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -75,7 +89,9 @@ class _HomeScreenState extends State<HomeScreen> {
     //   });
     // });
 
-    _readAndWritePreference();
+    // _readAndWritePreference();
+
+    _getPaths();
   }
 
   @override
@@ -86,19 +102,8 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('You have opened the app $_appCounter times'),
-            ElevatedButton(
-              onPressed: () {
-                _readAndWritePreference();
-              },
-              child: const Text('Add counter'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                _deletePreference();
-              },
-              child: const Text('Reset counter'),
-            ),
+            Text('Documents path $_documentsPath'),
+            Text('Temp path: $_tempPath')
           ],
         ),
       ),

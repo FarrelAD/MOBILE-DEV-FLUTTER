@@ -60,6 +60,11 @@
 
 # Tugas Praktikum 5 - Akses filesystem dengan path_provider
 
+![5 - 1](docs/img/05/01.png)
+
+![5 - 2](docs/img/05/02.png)
+
+
 # Tugas Praktikum 6 - Akses filesystem dengan direktori
 
 # Tugas Praktikum 7 - Menyimpan data dengan enkripsi/dekripsi
