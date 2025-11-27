@@ -52,6 +52,12 @@
 
 # Tugas Praktikum 4 - SharedPreferences
 
+![4 - 1](docs/img/04/01.png)
+
+![4 - 2](docs/img/04/02.png)
+
+![4 - 3](docs/img/04/03.png)
+
 # Tugas Praktikum 5 - Akses filesystem dengan path_provider
 
 # Tugas Praktikum 6 - Akses filesystem dengan direktori
